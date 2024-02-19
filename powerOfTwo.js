@@ -28,8 +28,8 @@
 // Follow up: Could you solve it without loops/recursion?
 
 const isPowerOfTwo=(n)=>{
-    if(n<1) false
-    return (n & (n-1))===0
+    if(n<1) return false; // below 1 always we return false
+    return (n & (n-1))===0 // perfforming binary operation between n & n-1
 }
 
 isPowerOfTwo(4)
